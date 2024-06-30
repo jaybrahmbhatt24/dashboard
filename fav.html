@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DashStack Favorites</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      margin: 20px;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.2s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #eee;
+    }
+
+    .content {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .content h1 {
+      margin-top: 0;
+    }
+
+    .product {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      width: 361px;
+      height: 491px;
+    }
+
+    .product img {
+      width: 361px;
+      height: 328px;
+      border-radius: 10px;
+    }
+
+    .product h2 {
+      margin-top: 10px;
+    }
+
+    .product p {
+      margin-bottom: 10px;
+    }
+
+    .product .rating {
+      display: flex;
+      align-items: center;
+    }
+
+    .product .rating i {
+      color: #ffc107;
+      font-size: 16px;
+      margin-right: 5px;
+    }
+
+    .product .price {
+      font-weight: bold;
+    }
+
+    .product .edit-button {
+      display: block;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .product .edit-button:hover {
+      background-color: #0069d9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>DashStack</h2>
+      <ul>
+        <li><a href="dash2.html">Dashboard</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="fav.html">Favorites</a></li>
+        <li><a href="#">Inbox</a></li>
+        <li><a href="#">Order Lists</a></li>
+        <li><a href="#">Product Stock</a></li>
+        <li>PAGES</li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Calender</a></li>
+        <li><a href="#">To-Do</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Invoice</a></li>
+        <li><a href="#">UI Elements</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Table</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Favorites</h1>
+      <div class="product">
+        <img src="https://dummyimage.com/300x300/000/fff" alt="Apple Watch Series 4">
+        <h2>Apple Watch Series 4</h2>
+        <p class="rating">★★★★★ (131)</p>
+        <p class="price">$120.00</p>
+        <a href="#" class="edit-button">Edit Product</a>
+      </div>
+      <div class="product">
+        <img src="https://dummyimage.com/300x300/000/fff" alt="Air-Max-270">
+        <h2>Air-Max-270</h2>
+        <p class="rating">★★★★★ (64)</p>
+        <p class="price">$60.00</p>
+        <a href="#" class="edit-button">Edit Product</a>
+      </div>
+      <div class="product">
+        <img src="https://dummyimage.com/300x300/000/fff" alt="Minimal Chair Tool">
+        <h2>Minimal Chair Tool</h2>
+        <p class="rating">★★★★★ (63)</p>
+        <p class="price">$24.59</p>
+        <a href="#" class="edit-button">Edit Product</a>
+      </div>
+      <div class="product">
+        <img src="https://dummyimage.com/300x300/000/fff" alt="Amazfit Vip">
+        <h2>Amazfit Vip</h2>
+        <p class="rating">★★★★★ (131)</p>
+        <p class="price">$120.00</p>
+        <a href="#" class="edit-button">Edit Product</a>
+      </div>
+      <div class="product">
+        <img src="https://dummyimage.com/300x300/000/fff" alt="Gumbo Mouse">
+        <h2>Gumbo Mouse</h2>
+        <p class="rating">★★★★★ (64)</p>
+        <p class="price">$60.00</p>
+        <a href="#" class="edit-button">Edit Product</a>
+      </div>
+      <div class="product">
+        <img src="https://dummyimage.com/300x300/000/fff" alt="Camera Tripod">
+        <h2>Camera Tripod</h2>
+        <p class="rating">★★★★★ (63)</p>
+        <p class="price">$24.59</p>
+        <a href="#" class="edit-button">Edit Product</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

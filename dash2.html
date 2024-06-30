@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashStack</title>
+    <link rel="stylesheet" href="s2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h1>DashStack</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="dash2.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+                <li><a href="product.html"><i class="fas fa-shopping-cart"></i>Products</a></li>
+                <li><a href="fav.html"><i class="fas fa-heart"></i>Favorites</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i>Inbox</a></li>
+                <li><a href="#"><i class="fas fa-list-alt"></i>Order Lists</a></li>
+                <li><a href="#"><i class="fas fa-box-open"></i>Product Stock</a></li>
+                <h3 class="menu-heading">Pages</h3>
+                <li><a href="#"><i class="fas fa-dollar-sign"></i>Pricing</a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i>Calender</a></li>
+                <li><a href="#"><i class="fas fa-tasks"></i>To-Do</a></li>
+                <li><a href="#"><i class="fas fa-user-friends"></i>Contact</a></li>
+                <li><a href="#"><i class="fas fa-file-invoice"></i>Invoice</a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i>UI Elements</a></li>
+                <li><a href="#"><i class="fas fa-user-cog"></i>Team</a></li>
+                <li><a href="#"><i class="fas fa-table"></i>Table</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="user-profile">
+                    <i class="fas fa-bell"></i>
+                    <img src="profile.png" alt="Profile">
+                </div>
+            </div>
+            <div class="dashboard">
+                <h2>Dashboard</h2>
+                <div class="revenue-chart">
+                    <h3>Revenue</h3>
+                    <div id="revenueChart"></div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <div class="color-dot" style="background-color: #ff7b7b;"></div>
+                            <span>Sales</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="color-dot" style="background-color: #d1b1ff;"></div>
+                            <span>Profit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Customers</h3>
+                        <div id="customerChart"></div>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <div class="color-dot" style="background-color: #3498db;"></div>
+                                <span>New Customers</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="color-dot" style="background-color: #95a5a6;"></div>
+                                <span>Repeated</span>
+                            </div>
+                        </div>
+                        <div class="card-data">
+                            <span>34,249</span>
+                            <span>1420</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Featured Product</h3>
+                        <div class="product-carousel">
+                            <button class="prev" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+                            <div class="product-item">
+                                <img src="product1.png" alt="Product">
+                                <h4>Beats Headphone 2019</h4>
+                                <p>$89.00</p>
+                            </div>
+                            <button class="next" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Sales Analytics</h3>
+                        <div id="salesChart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="s2.js"></script>
+</body>
+</html>
